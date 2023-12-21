@@ -1,0 +1,1951 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.1011.0410                               -->
+<workbook original-version='18.1' source-build='2023.1.7 (20231.23.1011.0410)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='matrix_data' inline='true' name='federated.05tepsx1q7o3uj1av0bi10sl8mt6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='please3' name='textscan.0pjfz511n8ivto103qnsu1kz3irj'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='/Users/noahford/Desktop/python/msa/please3.csv' dataRefreshTime='' directory='/Users/noahford/Desktop/python/msa' filename='/var/folders/l4/pc6_sp9x6dv3bjdsjjpz173r0000gn/T/tableau-temp/10nffcs0md9uu61f77nb90av6gz3/please3.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='output2' name='textscan.1q28c0d1sy19xj1gnxrcr046l0fb'>
+            <connection class='textscan' directory='/Users/noahford/Desktop/python/msa/sbhangover' filename='output2.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='playoffhangover' name='textscan.07udbbx1pn11qz179p2as0cvgxad'>
+            <connection class='textscan' directory='/Users/noahford/Desktop/python/msa/sbhangover' filename='playoffhangover.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1q28c0d1sy19xj1gnxrcr046l0fb' name='playoffhangover.csv' table='[playoffhangover#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='real' name='Missed' ordinal='1' />
+            <column datatype='real' name='Lost WC' ordinal='2' />
+            <column datatype='real' name='Lost Div' ordinal='3' />
+            <column datatype='real' name='Lost Title' ordinal='4' />
+            <column datatype='real' name='Lost SB' ordinal='5' />
+            <column datatype='real' name='Won SB' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1q28c0d1sy19xj1gnxrcr046l0fb' name='playoffhangover.csv' table='[playoffhangover#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='real' name='Missed' ordinal='1' />
+            <column datatype='real' name='Lost WC' ordinal='2' />
+            <column datatype='real' name='Lost Div' ordinal='3' />
+            <column datatype='real' name='Lost Title' ordinal='4' />
+            <column datatype='real' name='Lost SB' ordinal='5' />
+            <column datatype='real' name='Won SB' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[playoffhangover.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[playoffhangover.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Missed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Missed]</local-name>
+            <parent-name>[playoffhangover.csv]</parent-name>
+            <remote-alias>Missed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lost WC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lost WC]</local-name>
+            <parent-name>[playoffhangover.csv]</parent-name>
+            <remote-alias>Lost WC</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lost Div</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lost Div]</local-name>
+            <parent-name>[playoffhangover.csv]</parent-name>
+            <remote-alias>Lost Div</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lost Title</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lost Title]</local-name>
+            <parent-name>[playoffhangover.csv]</parent-name>
+            <remote-alias>Lost Title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lost SB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lost SB]</local-name>
+            <parent-name>[playoffhangover.csv]</parent-name>
+            <remote-alias>Lost SB</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Won SB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Won SB]</local-name>
+            <parent-name>[playoffhangover.csv]</parent-name>
+            <remote-alias>Won SB</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Div:qk]&quot;' value='Lost Div' />
+          <alias key='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost SB:qk]&quot;' value='Lost SB' />
+          <alias key='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Title:qk]&quot;' value='Lost Title' />
+          <alias key='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost WC:qk]&quot;' value='Lost WC' />
+          <alias key='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Missed (please2.csv):qk]&quot;' value='Missed' />
+          <alias key='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Won SB:qk]&quot;' value='Won SB' />
+        </aliases>
+      </column>
+      <column caption='axisLabel' datatype='string' name='[Calculation_4763049213517729794]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Playoff Result&quot;' />
+      </column>
+      <column caption='xaxisLabel' datatype='string' name='[Calculation_4763049213518897155]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Next Season Playoff Result&quot;' />
+      </column>
+      <column caption='Result' datatype='string' name='[F1]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;DIV&quot;' value='Lost Div' />
+          <alias key='&quot;SB L&quot;' value='Lost SB' />
+          <alias key='&quot;SB W&quot;' value='Won SB' />
+          <alias key='&quot;Title&quot;' value='Lost Title' />
+          <alias key='&quot;WC&quot;' value='Lost WC' />
+        </aliases>
+      </column>
+      <column datatype='real' name='[Lost Div]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Lost SB]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Lost Title]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Lost WC]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Won SB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='playoffhangover.csv' datatype='table' name='[__tableau_internal_object_id__].[playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D]' role='measure' type='quantitative' />
+      <column-instance column='[Lost Div]' derivation='Sum' name='[sum:Lost Div:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Lost SB]' derivation='Sum' name='[sum:Lost SB:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Lost Title]' derivation='Sum' name='[sum:Lost Title:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Lost WC]' derivation='Sum' name='[sum:Lost WC:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Won SB]' derivation='Sum' name='[sum:Won SB:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='playoffhangover.csv' id='playoffhangover.csv_B6149EE67C5B4DB3B56B683FBF0C3A3D'>
+            <properties context=''>
+              <relation connection='textscan.1q28c0d1sy19xj1gnxrcr046l0fb' name='playoffhangover.csv' table='[playoffhangover#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='F1' ordinal='0' />
+                  <column datatype='real' name='Missed' ordinal='1' />
+                  <column datatype='real' name='Lost WC' ordinal='2' />
+                  <column datatype='real' name='Lost Div' ordinal='3' />
+                  <column datatype='real' name='Lost Title' ordinal='4' />
+                  <column datatype='real' name='Lost SB' ordinal='5' />
+                  <column datatype='real' name='Won SB' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Heatmap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='18'>NFL Playoff Results vs Next Season Playoff Results</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true'>Design: Noah Ford, @NFDataViz</run>
+            <run>Æ&#10;</run>
+            <run bold='true'>Data: pro-football-reference.com</run>
+            <run>Æ&#10;</run>
+            <run bold='true'>Data from 1970-2021 NFL Seasons</run>
+            <run>Æ&#10;</run>
+            <run bold='true'>Created on Tableau</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matrix_data' name='federated.05tepsx1q7o3uj1av0bi10sl8mt6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05tepsx1q7o3uj1av0bi10sl8mt6'>
+            <column caption='axisLabel' datatype='string' name='[Calculation_4763049213517729794]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Playoff Result&quot;' />
+            </column>
+            <column caption='xaxisLabel' datatype='string' name='[Calculation_4763049213518897155]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Next Season Playoff Result&quot;' />
+            </column>
+            <column caption='Result' datatype='string' name='[F1]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;DIV&quot;' value='Lost Div' />
+                <alias key='&quot;SB L&quot;' value='Lost SB' />
+                <alias key='&quot;SB W&quot;' value='Won SB' />
+                <alias key='&quot;Title&quot;' value='Lost Title' />
+                <alias key='&quot;WC&quot;' value='Lost WC' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Lost Div]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lost SB]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lost Title]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lost WC]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Missed]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Won SB]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_4763049213517729794]' derivation='None' name='[none:Calculation_4763049213517729794:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4763049213518897155]' derivation='None' name='[none:Calculation_4763049213518897155:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Lost Div]' derivation='Sum' name='[sum:Lost Div:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lost SB]' derivation='Sum' name='[sum:Lost SB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lost Title]' derivation='Sum' name='[sum:Lost Title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lost WC]' derivation='Sum' name='[sum:Lost WC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Missed]' derivation='Sum' name='[sum:Missed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Won SB]' derivation='Sum' name='[sum:Won SB:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Missed:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost WC:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Div:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost SB:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Title:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Won SB:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Missed:qk]&quot;</bucket>
+              <bucket>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost WC:qk]&quot;</bucket>
+              <bucket>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Div:qk]&quot;</bucket>
+              <bucket>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Title:qk]&quot;</bucket>
+              <bucket>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost SB:qk]&quot;</bucket>
+              <bucket>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Won SB:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Lost WC&quot;</bucket>
+              <bucket>&quot;Lost Div&quot;</bucket>
+              <bucket>&quot;Lost Title&quot;</bucket>
+              <bucket>&quot;Lost SB&quot;</bucket>
+              <bucket>&quot;Won SB&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]' value='108' />
+            <format attr='height' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]' value='61' />
+            <format attr='text-format' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]' value='p0%' />
+            <format attr='text-align' value='center' />
+            <format attr='text-orientation' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]' value='-90' />
+            <format attr='wrap' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]' value='auto' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]' value='36' />
+            <format attr='height' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]' value='36' />
+            <format attr='height' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]' value='40' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]' value='-90' />
+            <format attr='font-size' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]' value='14' />
+            <format attr='text-align' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]' value='auto' />
+            <format attr='vertical-align' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]' value='auto' />
+            <format attr='font-size' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]' value='14' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]' palette='red_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]' field-type='quantitative' max-size='1' min-size='0.01' type='quantsize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='11' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk] / [federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk])</rows>
+        <cols>([federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk] / [federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names])</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Won SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Won SB:qk]&quot;</value>
+                <value>0.13500000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Won SB:qk]&quot;</value>
+                <value>0.076999999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Title&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Won SB:qk]&quot;</value>
+                <value>0.11799999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Div&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Won SB:qk]&quot;</value>
+                <value>0.062</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost WC&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Won SB:qk]&quot;</value>
+                <value>0.025999999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Won SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Title:qk]&quot;</value>
+                <value>0.13500000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Title:qk]&quot;</value>
+                <value>0.13500000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Title&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Title:qk]&quot;</value>
+                <value>0.17299999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Div&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Title:qk]&quot;</value>
+                <value>0.111</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost WC&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Title:qk]&quot;</value>
+                <value>0.089999999999999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Won SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost SB:qk]&quot;</value>
+                <value>0.096000000000000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost SB:qk]&quot;</value>
+                <value>0.096000000000000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Title&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost SB:qk]&quot;</value>
+                <value>0.055</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Div&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost SB:qk]&quot;</value>
+                <value>0.052999999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost WC&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost SB:qk]&quot;</value>
+                <value>0.032000000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Won SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Div:qk]&quot;</value>
+                <value>0.23100000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Div:qk]&quot;</value>
+                <value>0.28799999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Title&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Div:qk]&quot;</value>
+                <value>0.20000000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Div&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Div:qk]&quot;</value>
+                <value>0.14899999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost WC&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost Div:qk]&quot;</value>
+                <value>0.192</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Won SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost WC:qk]&quot;</value>
+                <value>0.096000000000000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost WC:qk]&quot;</value>
+                <value>0.115</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Title&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost WC:qk]&quot;</value>
+                <value>0.109</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Div&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost WC:qk]&quot;</value>
+                <value>0.111</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost WC&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Lost WC:qk]&quot;</value>
+                <value>0.128</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Won SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Missed:qk]&quot;</value>
+                <value>0.308</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='26' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost SB&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Missed:qk]&quot;</value>
+                <value>0.28799999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='27' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Title&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Missed:qk]&quot;</value>
+                <value>0.34499999999999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='28' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost Div&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Missed:qk]&quot;</value>
+                <value>0.51400000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='29' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                    <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+                  <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Playoff Result&quot;</value>
+                <value>&quot;Next Season Playoff Result&quot;</value>
+                <value>&quot;Lost WC&quot;</value>
+                <value>&quot;[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[sum:Missed:qk]&quot;</value>
+                <value>0.53200000000000003</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{63CD31B4-5B70-44FB-B7CD-F5C351420AA1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 1]</field>
+            <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[:Measure Names]</field>
+            <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[Multiple Values]</field>
+            <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213517729794:nk]</field>
+            <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:Calculation_4763049213518897155:nk]</field>
+            <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1 (please2.csv):nk]</field>
+            <field>[federated.05tepsx1q7o3uj1av0bi10sl8mt6].[none:F1:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4F958E6E-170A-4F53-9AB6-C4FCD8E4A466}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Heatmap' width='384'>
+      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
+      rBYLx8/X8cbeg3z7gXuZmp8zfF4GAqAomI3Gj31eSgDcIH6/nx07dpCYmMidd94ZcnVtMpnI
+      zMzk3nvv5b//+78pLy8nNzcXg8GAx+NB0zTS0tKwWq16RWu1WrFarWRkZIQcx2g06m38ZrOZ
+      iDHGH48lJyeHuLg4GhsbcblcREVF4ff7qamp0UcVKYpCSkoKKSkp1NXV4fV69Xb78+fPEx8f
+      T3p6ekgfQrAvIjY2dtR+jpvJ4/fz47e2Mys/h413zKOuvZNf7drP8fpGIs1m7p45jS8unk9m
+      Qvwtd+cibh0NHZ2crLtIR28fDe2d7D5ZSV1LK7lpKfz0q1/myyvv1EfM5aQkU5yTze937+Mb
+      a9eQl56K0+3h+W07iYq0MDU/F1XV+OeX32B+cREPlS6i+lIzm97dyfGaOqIiI1h7+zw23rmE
+      jMSEj3xe3lrfxM+w/v5+hoaGSE9PD2kyCVIUhezsbDIyMmhrayMQCGA2m0lPT8dsNvPOO++w
+      aNEi8vLyiI//5Coim81GcnIyjY2NtLa2MmnSJPx+P/X19WRkZOjt+larlfT0dKqrq2lubmbi
+      xIlomkZdXR2JiYkkJiaGHDcYBqqqomnaLVWRvnfyLJWXWvk/f/1FnB4vT/7mdc40t3JH0US8
+      fj//vGUbjd09/HD9vaTbbt4ENXHrUjWNLfuP8L1fvhjy94mZ6Xxl1V2sX7IwZLh0ZlIiD5Xe
+      wdFz5/naf/wf7pw5nc6+Pn7//j7WzJvNkuklvHv0OOebWvjl338Th9PFE89tora5lYVTi/H4
+      fDzz0qs0dnTygy9+ntSEkfNxxkMC4Abp6+vD7/eTlJQ06igcgMjISGw2G21tbaiqCsCsWbNo
+      aGjg+PHjXLp0icTERDIzMykpKaGoqOi6N6cYjUYmTJjA+fPnaWlpYdKkSTgcDjo6Opg+fbr+
+      fIqikJubi9lspr6+nokTJ9Lf309PTw/Tpk0bEQDB/x4cHMTn812xKepG+83eQ9w7azoLiybw
+      k7ff40RDEz/+4jrWzpqOX1X53+/s5JWDZSwrKWL9/Fkj5j0IYVAU7r19Lsm2OHodg7TZeymv
+      ucCJunp+vuUdqhqaePpLGyhIH77zNxgMrF04j4Cq8n//5hX2njpDpCWC+xfO54ePPITD6eQ/
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
